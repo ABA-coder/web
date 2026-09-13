@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Stay - Grand Palace Hotel</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header id="main-header">
+        <div class="logo">
+            <h1>BookingApp</h1>
+        </div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="search-results.html">Search</a></li>
+                <li><a href="hotel-detail.html">Hotel Details</a></li>
+                <li><a href="booking.html" class="active">Booking</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <section class="booking-section">
+            <h2>Complete Your Booking</h2>
+            <p>Please fill out the form below to reserve your room at <strong>Grand Palace Hotel</strong>.</p>
+            <form action="#" method="POST" id="contact-form" class="booking-form">
+                
+                <div class="form-group">
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="John Doe" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="checkin">Check-in Date:</label>
+                    <input type="date" id="checkin" name="checkin" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="checkout">Check-out Date:</label>
+                    <input type="date" id="checkout" name="checkout" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="room-type">Room Type Selection:</label>
+                    <select id="room-type" name="room_type">
+                        <option value="standard">Standard Double Room ($120/night)</option>
+                        <option value="deluxe">Deluxe Suite ($200/night)</option>
+                        <option value="presidential">Presidential Suite ($450/night)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="guests">Number of Guests:</label>
+                    <input type="number" id="guests" name="guests" min="1" max="6" value="1" required>
+                </div>
+                <div class="form-group">
+                    <label for="notes">Special Requests / Message:</label>
+                    <textarea id="notes" name="notes" rows="4" placeholder="Any special requests (e.g. late check-in, quiet room)..."></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn-submit">Confirm & Proceed to Payment</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 TravelEase All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

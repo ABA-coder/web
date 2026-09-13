@@ -1,0 +1,397 @@
+/* Базовые настройки */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f6f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* Шапка и навигация */
+#main-header {
+    background-color: #1e293b;
+    color: #fff;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h2 {
+    margin: 0;
+    color: #ffffff;
+}
+
+.nav-menu ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+
+.nav-menu a:hover, 
+.nav-menu a.active {
+    color: #60a5fa;
+    text-decoration: underline;
+}
+
+/* Универсальные белые блоки с тенью */
+.content-box,
+.hero-section,
+.services-header,
+.services-list,
+.pricing-table-section,
+.how-to-book,
+.about-hero,
+.faq-section,
+.contact-section,
+.booking-section,
+.search-page,
+.hotel-info,
+.gallery-section,
+.reviews-section {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    margin-bottom: 2rem;
+}
+
+/* Заголовки */
+h1, h2, h3 {
+    color: #1e293b;
+    margin-top: 0;
+}
+
+/* Списки */
+.features-list, 
+.booking-steps, 
+.features ul {
+    padding-left: 1.5rem;
+    margin: 0.5rem 0;
+}
+
+.features-list li, 
+.booking-steps li {
+    margin-bottom: 0.6rem;
+}
+
+/* Таблицы (для Services) */
+.pricing-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.pricing-table th, 
+.pricing-table td {
+    padding: 0.85rem 1rem;
+    border: 1px solid #cbd5e1;
+    text-align: left;
+}
+
+.pricing-table th {
+    background-color: #1e293b;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.pricing-table tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+
+.pricing-table tr:hover {
+    background-color: #f1f5f9;
+}
+
+/* Карточки команды и направлений */
+.destination-grid, 
+.team-grid {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+}
+
+.card, 
+.team-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    flex: 1;
+    min-width: 250px;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.card {
+    padding: 0;
+    text-align: left;
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.card h3, .card p {
+    margin: 0.5rem 1rem;
+}
+
+.card p {
+    color: #64748b;
+    margin-bottom: 1rem;
+}
+
+/* Круглые аватарки команды */
+.profile-img {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 0.8rem;
+    border: 3px solid #2563eb;
+}
+
+.team-card h3 {
+    margin: 0.5rem 0 0.2rem 0;
+}
+
+.team-card .role {
+    font-weight: bold;
+    color: #2563eb;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.team-card .bio {
+    font-size: 0.9rem;
+    color: #64748b;
+    margin: 0;
+}
+
+/* FAQ блоки */
+.faq-item {
+    background: #f8fafc;
+    padding: 1rem 1.5rem;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    border-left: 4px solid #2563eb;
+}
+
+.faq-item h3 {
+    margin-top: 0;
+    margin-bottom: 0.4rem;
+    color: #1e293b;
+}
+
+/* Формы (Контакты и Бронирование) */
+.form-group {
+    margin-bottom: 1.2rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #334155;
+}
+
+.form-group input, 
+.form-group select, 
+.form-group textarea {
+    width: 100%;
+    padding: 0.7rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.form-group input:focus, 
+.form-group select:focus, 
+.form-group textarea:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+input[type="color"] {
+    padding: 0;
+    border: none;
+    height: 40px;
+    cursor: pointer;
+}
+
+/* Поиск на главной */
+.hero-search-form {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.hero-search-form input {
+    flex: 1;
+    min-width: 150px;
+    padding: 0.7rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 4px;
+}
+
+/* Кнопки */
+.btn-primary, 
+.btn-submit, 
+.btn {
+    background-color: #2563eb;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    display: inline-block;
+    text-align: center;
+    transition: background-color 0.2s;
+}
+
+.btn-primary:hover, 
+.btn-submit:hover, 
+.btn:hover {
+    background-color: #1d4ed8;
+}
+
+/* Галерея и детали отеля */
+.gallery-grid {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.gallery-grid img {
+    width: 32%;
+    min-width: 200px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    flex: 1;
+}
+
+.action-box {
+    background: #f8fafc;
+    padding: 1.2rem;
+    border-radius: 8px;
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #e2e8f0;
+}
+
+.review-card {
+    background: #f8fafc;
+    padding: 1rem;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    border: 1px solid #e2e8f0;
+}
+
+.review-stars {
+    color: #f59e0b;
+    margin: 0 0 0.3rem 0;
+}
+
+/* Поиск - Сайдбар */
+.search-container {
+    display: flex;
+    gap: 2rem;
+}
+
+.filter-sidebar {
+    width: 220px;
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    height: fit-content;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    border: 1px solid #e2e8f0;
+}
+
+.filter-sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.filter-sidebar li {
+    margin-bottom: 0.8rem;
+}
+
+.results-list {
+    flex: 1;
+}
+
+.hotel-card {
+    display: flex;
+    background: #fff;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    border: 1px solid #e2e8f0;
+}
+
+.hotel-card img {
+    width: 250px;
+    object-fit: cover;
+}
+
+.hotel-info {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.hotel-info .price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #0f172a;
+    margin-bottom: 1rem;
+}
+
+/* Подвал */
+footer {
+    background-color: #1e293b;
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 3rem;
+}
+
+footer p {
+    margin: 0;
+}

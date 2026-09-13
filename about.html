@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookingApp - About Us & Our Team</title>
+    <link rel="stylesheet" href="css/ablstyle.css">
+</head>
+<body>
+    <header id="main-header">
+        <div class="logo">
+            <h2>BookingApp</h2>
+        </div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="search-results.html">Search</a></li>
+                <li><a href="hotel-detail.html">Hotel Details</a></li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html" class="active">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="content-box">
+            <h1>About BookingApp</h1>
+            <p>BookingApp is a modern travel booking platform designed to make hotel search, reservation, and transfer booking fast and effortless for modern travelers.</p>
+        </section>
+
+        <section class="content-box">
+            <h2>About the Team Members</h2>
+            <div class="team-grid">
+                <div class="team-card">
+                    <img src="image/allazhar.jpg" alt="Allazhar Aldongarov" class="profile-img">
+                    <h3>Allazhar Aldongarov</h3>
+                    <p class="role">Frontend Developer</p>
+                    <p class="bio">2st-year IT student passionate about building clean user interfaces.</p>
+                </div>
+                <div class="team-card">
+                    <img src="image/dias.jpg" alt="Dias Serikov" class="profile-img">
+                    <h3>Dias Serikov</h3>
+                    <p class="role">UI/UX Designer</p>
+                    <p class="bio">Specializes in modern CSS styling and user experience design.</p>
+                </div>
+                <div class="team-card">
+                    <img src="image/abylay.jpg" alt="Yerkenov Abylay" class="profile-img">
+                    <h3>Yerkenov Abylay</h3>
+                    <p class="role">Service Integrator & QA</p>
+                    <p class="bio">Responsible for content structure, data tables, and services.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-box">
+            <h2>Frequently Asked Questions (FAQ)</h2>
+            <div class="faq-item">
+                <h3>Q: Can I cancel my reservation for free?</h3>
+                <p>A: Yes, most hotels on our platform support free cancellation up to 24 hours before check-in.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Q: How do I arrange an airport transfer?</h3>
+                <p>A: You can add an airport transfer during the room booking process or directly from our Services page.</p>
+            </div>
+        </section>
+
+        <section class="content-box">
+            <h2>Contact Us</h2>
+            <form action="index.html" class="booking-form">
+                <div class="form-group">
+                    <label for="contact-name">Your Name:</label>
+                    <input type="text" id="contact-name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="contact-email">Your Email:</label>
+                    <input type="email" id="contact-email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Topic:</label>
+                    <select id="subject" name="subject">
+                        <option value="general">General Inquiry</option>
+                        <option value="support">Customer Support</option>
+                        <option value="feedback">Feedback</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Priority Color Tag:</label>
+                    <input type="color" name="priority-color" value="#2563eb">
+                </div>
+                <div class="form-group">
+                    <label for="contact-msg">Message:</label>
+                    <textarea id="contact-msg" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 BookingApp. Created by: Allazhar Aldongarov, Dias Serikov, Yerkenov Abylay</p>
+    </footer>
+</body>
+</html>
